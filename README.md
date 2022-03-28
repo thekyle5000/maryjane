@@ -8,6 +8,8 @@
 
 ## Running The App
 * input via stdin or absolute file path (-f)
+* bin/footy -f <abs file path>
+* bin/footy
 
 ## Run Tests
 * bundle install
