@@ -1,0 +1,13 @@
+#!/usr/bin/ruby
+require 'optparse'
+require_relative '../lib/league'
+
+options = {}
+OptionParser.new do |opts|
+  opts.banner = "Usage: footy.rb [-f, --file]"
+  opts.on("-f [FILE]", "--file [FILE]", "absolute path to text file") do |v|
+    options[:abs_file_path] = v
+  end
+end.parse!
+
+League.new(options[:abs_file_path]).run
