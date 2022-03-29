@@ -21,10 +21,10 @@
 * League class is initialized with one argument- here I'm determining whether file path was given or not
 
 ### LineParser
-* helper class validates line content
+* helper class to validate line content
 * wrote regex to spot invalid lines
 * returns a hash with team names and calculated points (points awarded for that game  
-according to rules provided in prompt)
+according to rules provided in prompt) or false if line is invalid
 
 ### League
 * we are going to keep track of all the teams and corresponding accumulated points in @teams_points
